@@ -8,7 +8,8 @@ import { FaGraduationCap, FaCheckCircle, FaStar, FaRegStar } from "react-icons/f
 import user1 from '../user1.jpg';
 import user2 from '../user2.jpg';
 import user3 from '../user3.jpg';
-import Steps, {Step } from "rc-steps";
+import livre from '../livres.jpg';
+import Steps from "rc-steps";
 
 class Home extends Component{
 
@@ -21,7 +22,7 @@ class Home extends Component{
         return (
             <Container fluid>
                 <Row>
-                    <Col sm={4} className="side">
+                    <Col sm={3} className="side">
 
                         <img
                             src={logo}
@@ -36,9 +37,15 @@ class Home extends Component{
                                 <Steps.Step title="Paiement"/>
                             </Steps>
 
+                        <img
+                            src={livre}
+                            width={300}
+                            className="d-inline-block picture"
+                            alt="React Bootstrap logo"
+                        />
 
                     </Col>
-                    <Col sm={8}>
+                    <Col sm={8} className="ms-5">
                         <p className="title my-3"> En quelle matière avez-vous besoin d'aide ?</p>
                         <InputGroup className="mb-3">
                             <FormControl
@@ -68,9 +75,9 @@ class Home extends Component{
                                         <ListGroup.Item><FaCheckCircle />  Diplôme vérifié</ListGroup.Item>
                                         <ListGroup.Item><MdLocationOn />  Paris</ListGroup.Item>
                                     </ListGroup>
-                                    <Card.Text>
-                                        <div className="fw-bold">Description</div>
-                                        Je vous remercie de cette opportunité.
+                                    <div className="fw-bold text-start ms-2">Description</div>
+                                    <Card.Text className="m-2 text-muted">
+                                        Je vous remercie de cette opportunité.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     </Card.Text>
                                 </Card.Body>
                                 <Button>Choisir</Button>
@@ -87,9 +94,9 @@ class Home extends Component{
                                         <ListGroup.Item><FaCheckCircle />  Diplôme vérifié</ListGroup.Item>
                                         <ListGroup.Item><MdLocationOn />  Paris</ListGroup.Item>
                                     </ListGroup>
-                                    <Card.Text>
-                                        <div className="fw-bold">Description</div>
-                                        Je vous remercie de cette opportunité.
+                                    <div className="fw-bold text-start ms-2">Description</div>
+                                    <Card.Text className="m-2 text-muted">
+                                        Je vous remercie de cette opportunité.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     </Card.Text>
                                 </Card.Body>
                                 <Button>Choisir</Button>
@@ -106,16 +113,16 @@ class Home extends Component{
                                         <ListGroup.Item><FaCheckCircle />  Diplôme vérifié</ListGroup.Item>
                                         <ListGroup.Item><MdLocationOn />  Paris</ListGroup.Item>
                                     </ListGroup>
-                                    <Card.Text>
-                                        <div className="fw-bold">Description</div>
-                                        Je vous remercie de cette opportunité.
+                                    <div className="fw-bold text-start ms-2">Description</div>
+                                    <Card.Text className="m-2 text-muted">
+                                        Je vous remercie de cette opportunité.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     </Card.Text>
                                 </Card.Body>
                                 <Button>Choisir</Button>
                             </Card>
                         </CardGroup>
 
-                        <Button className="tuileNav prec">Precedent</Button>
+                        <Button variant="outline-secondary" className="prec" disabled='true'>Precedent</Button>
                         <Button className="tuileNav suiv">Suivant</Button>
                     </Col>
                 </Row>

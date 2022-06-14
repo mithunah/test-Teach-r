@@ -1,6 +1,10 @@
+.picture{
+    bottom: 30px;
+    left: 30px;
 
+}
 .rc-steps{
-    margin: 50px 10px;
+    margin: 150px 10px;
 }
 
 .rc-steps-item-container{
@@ -13,7 +17,7 @@
 }
 
 .rc-steps-item-wait .rc-steps-item-icon, .rc-steps-item-process .rc-steps-item-icon{
-    padding: 0 2%;
+    padding: 0 9px;
     border-radius:50%;
     border: 3px solid #2253a5;
     vertical-align: middle;
@@ -51,15 +55,19 @@
 
 @media only screen and (min-width: 1200px){
     .title, title{
-        font-size: 1.6rem;
+        font-size: 2rem;
         color: #2253a5
     }
     svg{
         font-size: 28px;
     }
     .rc-steps-item-content, .rc-steps-item-icon{
+        font-family: "Calibri Light";
         font-size: 1.5rem;
         color: #2253a5
+    }
+    .rc-steps-item-finish svg{
+        font-size: 40px;
     }
 }
 .input-group
@@ -90,29 +98,35 @@
 .card{
     margin: 4rem 30px 30px;
     background-color: #f3f9ff !important;
+    color: #2253a5;
 }
 .card img{
     position: relative;
     margin: 0 auto;
     border-radius: 80%;
     width: 40%;
-    top: -15%;
+    top: -10%;
 
 }
 
 .card-body{
     padding: 0 !important;
-
+    position: relative;
 }
-
+.card-text{
+    margin: 30px 0 30px 10px;
+    text-align: start;
+}
 .list-group{
     align-items: start;
+
 }
 
 .list-group-item{
     background-color: inherit !important;
     border: none !important;
     margin-right: 20px;
+    color: #2253a5 !important;
 }
 
 .card button{
@@ -131,7 +145,7 @@
 }
 
 .prec{
-    background-color: #2253a5 !important;
+    border: none !important;
 }
 
 .suiv{
