@@ -1,0 +1,141 @@
+
+.rc-steps{
+    margin: 50px 10px;
+}
+
+.rc-steps-item-container{
+    display: flex;
+    margin: 5px 10px;
+}
+
+.rc-steps-item-content{
+    margin: 0 10px;
+}
+
+.rc-steps-item-wait .rc-steps-item-icon, .rc-steps-item-process .rc-steps-item-icon{
+    padding: 0 2%;
+    border-radius:50%;
+    border: 3px solid #2253a5;
+    vertical-align: middle;
+}
+
+
+@media all and (max-device-width: 480px){
+    .title, title{
+        font-size: 15px;
+        font-weight: bold;
+        color: #2253a5
+    }
+    svg{
+        font-size: 30px;
+    }
+    .rc-steps-item-content, .rc-steps-item-icon{
+        font-size: 15px;
+        color: #2253a5
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+    .title, title, svg{
+        font-size: 1.5rem;
+        color: #2253a5;
+        font-weight: 550;
+    }
+    .rc-steps-item-content, .rc-steps-item-icon{
+        font-size: 1.2rem;
+        color: #2253a5
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+    .title, title{
+        font-size: 1.6rem;
+        color: #2253a5
+    }
+    svg{
+        font-size: 28px;
+    }
+    .rc-steps-item-content, .rc-steps-item-icon{
+        font-size: 1.5rem;
+        color: #2253a5
+    }
+}
+.input-group
+{
+    width: 50% !important;
+    margin: auto;
+}
+
+.input-group svg
+{
+    color: dimgray;
+}
+
+.side, .input-group>.form-control
+{
+    background-color: #f3f5fb ;
+    border: none;
+}
+
+.form-control:focus
+{
+    border: none !important;
+    box-shadow: none !important;
+    background-color: #f8f9fa !important;
+
+}
+
+.card{
+    margin: 4rem 30px 30px;
+    background-color: #f3f9ff !important;
+}
+.card img{
+    position: relative;
+    margin: 0 auto;
+    border-radius: 80%;
+    width: 40%;
+    top: -15%;
+
+}
+
+.card-body{
+    padding: 0 !important;
+
+}
+
+.list-group{
+    align-items: start;
+}
+
+.list-group-item{
+    background-color: inherit !important;
+    border: none !important;
+    margin-right: 20px;
+}
+
+.card button{
+    position: relative;
+    width: 60%;
+    border-radius: 20px;
+    margin: auto;
+    bottom: -20px;
+    background-color: #2253a5;
+}
+
+.tuileNav{
+    width: 20%;
+    border-radius: 3rem !important;
+    margin: 3rem 2rem;
+}
+
+.prec{
+    background-color: #2253a5 !important;
+}
+
+.suiv{
+    background-color: transparent !important;
+    color: #2253a5 !important;
+    border: 2px solid #2253a5 !important;
+}
